@@ -1,3 +1,25 @@
-.index-title {
-  font-size: 100px;
+.bg-images{
+  height: 2049px;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  background-image: url('/assets/images/home_background.png'),linear-gradient(to right, #00000000 0%, #000 65%),url('/assets/images/carousel_background.png') ;
+  // min-height: 960px;
+  // width: 100vw;
+  background-size: 100% 960px, 100% 100%, 980px 1089px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:
+    top left,
+    bottom right,
+    bottom left;
+}
+.circle{
+  width: 196px;
+  aspect-ratio: 1/1;
+}
+.banner{
+  img:hover{
+    transition: all 0.4s;
+    box-shadow: 0px 0px 16px 8px #8F00FFCC;
+  }
 }

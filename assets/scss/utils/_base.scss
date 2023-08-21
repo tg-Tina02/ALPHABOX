@@ -1,0 +1,44 @@
+// 字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Shrikhand&display=swap');
+
+// icon
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+body{
+  background: #31095f;
+  padding-top: 76px;
+}
+img{
+  display: block;
+  max-height: 100%;
+}
+
+.text-Shrikhand{
+    font-family: 'Shrikhand', cursive;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.line-bg-gradient{
+  height: 40px;
+  width: 100%;
+  background-image: linear-gradient(to right, #7000FF, #11002D);
+}
+.letter-spacing-L{
+  letter-spacing: 1em;
+}
+.text-align-justify{
+  text-align-last: justify;
+}
+.bg-gradient-light{
+  background:radial-gradient(circle at center,#000,#28085C);
+}
+.bg-gradient-dark{
+  background:radial-gradient(circle at center,#28085C,#000);
+}
