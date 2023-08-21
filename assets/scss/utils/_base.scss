@@ -1,5 +1,5 @@
 // 字體
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Saira+Condensed:wght@300&family=Shrikhand&display=swap');
 
 // icon
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
@@ -15,6 +15,9 @@ img{
 
 .text-Shrikhand{
     font-family: 'Shrikhand', cursive;
+}
+.text-Saira{
+  font-family: 'Saira Condensed', sans-serif;
 }
 
 .material-symbols-outlined {
@@ -41,4 +44,36 @@ img{
 }
 .bg-gradient-dark{
   background:radial-gradient(circle at center,#28085C,#000);
+}
+
+.share-list{
+  .list-item .card{
+    height: 416px;
+  }
+  .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 1,
+  }
+}
+form{
+  input,textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 0;
+    resize: none;
+  }
+  ::placeholder{
+    color: #1F0F39;
+  }
+  button{
+    width: 70%;
+    position: relative;
+    left: 30%;
+  }
+}
+.fs-400{
+  font-size: 400px;
 }
