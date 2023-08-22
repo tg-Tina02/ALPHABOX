@@ -12,6 +12,16 @@
     top left,
     bottom right,
     bottom left;
+
+  // nav底下那條線
+  &::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 79px;
+  }
 }
 .circle{
   width: 196px;

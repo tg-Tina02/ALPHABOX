@@ -299,6 +299,7 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       #6E01F8;//$blue !default; custom
+$primary-light:     #E9E2F3;//custom
 $secondary:     #7000FF;//$gray-600 !default; custom
 $success:       $green !default;
 $info:          $cyan !default;
@@ -313,6 +314,7 @@ $dark-2:        #1F0F39;//$gray-900 !default; custom
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
+  "primary-light":    $primary-light, //custom
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -496,7 +498,7 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $black;//$gray-300 !default; custom
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 

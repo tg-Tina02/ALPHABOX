@@ -1,0 +1,28 @@
+.product-banner{
+    // margin-top: 75px ;
+    padding-top: 75px;
+    .circle{
+        top: 70%;
+    }
+}
+.info-list{
+    h4{
+        position: relative;
+    }
+    h4::after{
+        transition: all 0.4s;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        // width: 100%;
+        width: 0px;
+        height: 2px;
+        background: #000;
+    }
+    li:hover{
+        h4::after{
+            width: 100%;
+        }
+    }
+}

@@ -4,18 +4,21 @@
 // icon
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+
 body{
-  background: #31095f;
-  padding-top: 76px;
+  // background: #31095f;
+  // background: #000;
+  padding-top: 73px;
 }
 img{
   display: block;
   max-height: 100%;
 }
-
+//英文
 .text-Shrikhand{
     font-family: 'Shrikhand', cursive;
 }
+//大數字
 .text-Saira{
   font-family: 'Saira Condensed', sans-serif;
 }

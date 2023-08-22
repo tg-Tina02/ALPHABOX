@@ -1,5 +1,6 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+// @import './utils/utilities';
 
 @import "../../node_modules/bootstrap";
 
@@ -8,5 +9,7 @@
 @import './layout/nav.scss';
 @import './layout/footer.scss';
 
-
+//pages
 @import './pages/index.scss';
+@import './pages/product.scss';
+@import './pages/about.scss';
