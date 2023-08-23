@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALPHABOX+</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+  </head>
+  <body class="position-relative bg-black">
+    <%- include('./layout/nav'); -%>
+
+    <!-- Contact us -->
+    <!-- 上半部 -->
+    <div class="bg-gradient-dark text-white">
+      <div class="container py-10">
+        <h3 class="h2 letter-spacing-L mb-4 fw-bolder">聯絡我們</h3>
+        <div class="row justify-content-evenly">
+          <div class="col-6">
+            <p class="mb-8 fw-light">
+              您的意見與需求對我們至關重要！如果您對 ALPHABOX+ 有任何疑問、建議或需求，請隨時填寫以下表單，我們將在 24 小時內回覆您。您的寶貴意見將幫助我們不斷改進產品與服務，為您帶來更優質的體驗。
+            </p>
+            <p class="mb-8 fw-bold">
+              我們期待您的來信與來電，竭誠為您解答。讓我們攜手共創更美好的未來！
+            </p>
+            <form action="">
+              <input type="text" placeholder="姓名">
+              <input type="email" placeholder="EMAIL">
+              <input type="tel" placeholder="聯絡電話">
+              <textarea name="" id="" rows="4" placeholder="COMMENTS"></textarea>
+              <button class="btn btn-primary w-100"><span class="material-symbols-outlined me-2">
+                point_scan
+                </span>送出</button>
+            </form>
+          </div>
+          <!-- aside -->
+          <ul class="col-3 list-unstyled fw-light">
+            <li class="mb-7">
+              <div class="opacity-50">客服時間</div>
+              <div>週一至週五 09:00-18:00</div>
+            </li>
+            <li class="mb-7">
+              <div class="opacity-50">聯絡地址</div>
+              <div>高雄市新興區民生一路 56 號</div>
+            </li>
+            <li class="mb-7">
+              <div class="opacity-50">聯絡資訊</div>
+              <div>
+                <a href="tel:+886-2-12345678" title="撥打電話" class="text-white">+886-2-12345678</a>
+              </div>
+              <div>
+                <a href="mailto:mailto:customer@alphabox.com" title="傳送郵件" class="text-white">mailto:customer@alphabox.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- contact footer -->
+      <div class="border-top border-white py-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto ms-auto">
+              <ul class="list-unstyled d-flex fw-lighter gap-5 mb-0 contact-footer">
+                <li><a href="javascript:;" class="text-white">INSTAGRAM</a></li>
+                <li><a href="javascript:;" class="text-white">FACEBOOK</a></li>
+                <li><a href="javascript:;" class="text-white">TWITTER</a></li>
+                <li><a href="javascript:;" class="text-white">LINKEDIN</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 下半部 -->
+    <!-- 選擇自己要的角色 -->
+    <div class="bg-white pt-10 pb-9">
+      <div class="container mb-9">
+        <h2 class="h2 letter-spacing-L fw-bolder mb-5">選擇自己要的角色</h2>
+        <span class="text-primary h3 fw-bolder me-5">20K+</span><span class="h3 fw-bolder">使用者喜歡我們的服務</span>
+      </div>
+      <!-- 1 -->
+      <div class="w-75 position-relative">
+        <img src="../assets/images/horizontal/diane_horizontal.png" alt="" class="img-fluid">
+        <!-- !這邊使用 star-25 都無效 -->
+        <div class="text-Shrikhand fs-2 text-white position-absolute top-50 my-star-15 translate-middle-y">Diane</div>
+      </div>
+      <!-- 2 -->
+      <div class="w-75 position-relative ms-auto">
+        <img src="../assets/images/horizontal/felix_horizontal.png" alt="" class="img-fluid">
+        <div class="text-Shrikhand fs-2 text-white position-absolute top-50 my-end-15 translate-middle-y">Felix</div>
+      </div>
+      <!-- 3 -->
+      <div class="w-75 position-relative">
+        <img src="../assets/images/horizontal/karina_horizontal.png" alt="" class="img-fluid">
+        <div class="text-Shrikhand fs-2 text-white position-absolute top-50 my-star-15 translate-middle-y">Karina</div>
+      </div>
+      <!-- 4 -->
+      <div class="w-75 position-relative ms-auto">
+        <img src="../assets/images/horizontal/vito_horizontal.png" alt="" class="img-fluid">
+        <div class="text-Shrikhand fs-2 text-white position-absolute top-50 my-end-15 translate-middle-y">Vito</div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

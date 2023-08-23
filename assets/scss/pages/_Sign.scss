@@ -1,0 +1,29 @@
+.Sign-form{
+    // background: orchid;
+    border-top: 1px solid #828282;
+    position: relative;
+    padding-top: 33px;
+    &::before{
+        content: 'or';
+        font-weight: 400;
+        padding: 0 4px;
+        position: absolute;
+        background: #28085C;
+        top: -4px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    a{
+        color: white;
+        text-decoration: underline;
+        &:hover{
+            color: $primary-light;
+        }
+    }
+}
+.modal{
+    .btn-close{
+        top: 20px;
+        right: 20px;
+    }
+}

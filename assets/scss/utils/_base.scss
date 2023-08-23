@@ -1,5 +1,5 @@
 // 字體
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Saira+Condensed:wght@300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Saira+Condensed:wght@300&family=Shrikhand&display=swap');
 
 // icon
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
@@ -59,7 +59,7 @@ img{
   }
 }
 form{
-  input,textarea{
+  input:not([type="checkbox"]),textarea{
     display: block;
     width: 100%;
     margin-bottom: 16px;
@@ -71,7 +71,7 @@ form{
   ::placeholder{
     color: #1F0F39;
   }
-  button{
+  .w-70{
     width: 70%;
     position: relative;
     left: 30%;

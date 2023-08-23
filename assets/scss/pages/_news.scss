@@ -1,0 +1,45 @@
+.News{
+    .h3{
+        width: 7em;
+    }
+}
+.news-list{
+    a:hover{
+        .col-1{
+            span{
+                margin-left: 12px;
+                transition: all 0.4s;
+            }
+        }
+    }
+}
+.news-pagination{
+    font-size: 24px;
+    font-family: 'Saira Condensed', sans-serif;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+
+    a{
+        padding: 5px 16px;
+        position: relative;
+        &:hover:not(.active){
+            opacity: 0.8;
+        }
+    }
+    .active::after{
+        content: '';
+        width: 9px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.News-p2{
+    a:hover{
+        opacity: 0.8;
+    }
+}

@@ -7,7 +7,7 @@
     <title>ALPHABOX+</title>
     <link rel="shortcut icon" href="../assets/images/favicon.ico" />
   </head>
-  <body class="position-relative">
+  <body class="position-relative bg-primary">
     <%- include('./layout/nav'); -%>
 
     <!-- 背景圖 -->
@@ -16,35 +16,43 @@
     <div class="container-fluid text-white pt-8 pb-3">
       <div class="row mb-8">
         <div class="col-3 d-flex flex-column justify-content-end">
-          <div class="border-bottom fw-bold">最新消息！新版本 v15.4 釋出，搶先體驗！</div>
+          <a href="news-p2.html" class="link-white border-bottom border-white fw-bold">最新消息！新版本 v15.4 釋出，搶先體驗！</a>
         </div>
         <div class="col-6">
           <img src="../assets/images/circle.png" alt="" class="circle mx-auto">
         </div>
         <div class="col-3 d-flex flex-column justify-content-between">
-          <div class="border-top fw-bold">ALPHABOX+ STUDIO</div>
+          <div class="border-top border-white fw-bold">ALPHABOX+ STUDIO</div>
           <div>Copyright © 2023 Hexschool.</div>
         </div>
       </div>
       <div class="row banner mb-7">
-        <div class="col-3">
+        <!-- 1-Diane -->
+        <div class="col-3 position-relative">
           <img src="../assets/images/diane.png" alt="Diane" class="img-fluid">
+          <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Diane</div>
         </div>
         <div class="col-6 text-center d-flex flex-column">
           <!-- ? 這邊的 text-align-justify 無效 -->
           <h2 class="text-Shrikhand h4 text-align-justify">ALPHABOX+</h2>
           <p class="fw-bold text-align-justify">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
           <div class="d-flex gap-5 mt-auto">
-            <div class="pic w-50">
+            <!-- 2-Felix -->
+            <div class="pic w-50 position-relative">
               <img src="../assets/images/felix.png" alt="Felix" class="img-fluid">
+              <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Felix</div>
             </div>
-            <div class="pic w-50">
+            <!-- 3-Karina -->
+            <div class="pic w-50 position-relative">
               <img src="../assets/images/karina.png" alt="Karina" class="img-fluid">
+              <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Karina</div>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <!-- 4-Vito -->
+        <div class="col-3 position-relative">
           <img src="../assets/images/vito.png" alt="vito" class="img-fluid">
+          <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Vito</div>
         </div>
       </div>
       <!-- 漸層線 -->
@@ -89,9 +97,9 @@
       <div class="container pt-10">
         <h3 class="h3 letter-spacing-L mb-7">最新消息</h3>
         <!-- 區塊 -->
-        <div class="row border-top border-bottom mb-9">
+        <div class="row border-top border-bottom border-white mb-9">
           <!-- 上 -->
-          <div class="col-12 py-7 border-bottom">
+          <div class="col-12 py-7 border-bottom border-white">
             <div class="letter-spacing-L mb-2">
               <span class="material-symbols-outlined me-4">
                 emergency
@@ -102,13 +110,13 @@
               <div class="col-9">
                 <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
               </div>
-              <div class="col-3">
-                <a href=""><img src="../assets/images/line_end_arrow_notch.png" alt="" class="ms-auto"></a>
+              <div class="col-2 ms-auto">
+                <a href="news.html"><img src="../assets/images/line_end_arrow_notch-2.png" alt="" class="img-fluid"></a>
               </div>
             </div>
           </div>
           <!-- 下左 -->
-          <div class="col-6 py-7 border-end">
+          <div class="col-6 py-7 border-end border-white">
             <div class="letter-spacing-L mb-2">
               <span class="material-symbols-outlined me-4">
                 emergency
@@ -116,7 +124,7 @@
             </div>
             <div class="h5 letter-spacing-L mb-3">限時優惠活動</div>
             <p class="mb-3">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
-            <a href=""><img src="../assets/images/line_end_arrow_notch.png" alt="" class="me-auto"></a>
+            <a href="news.html"><img src="../assets/images/line_end_arrow_notch-sm.png" alt=""></a>
           </div>
           <!-- 下右 -->
           <div class="col-6 py-7">
@@ -127,7 +135,7 @@
             </div>
             <div class="h5 letter-spacing-L mb-3">新功能上線</div>
             <p class="mb-3">為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
-            <a href=""><img src="../assets/images/line_end_arrow_notch.png" alt="" class="me-auto"></a>
+            <a href="news.html"><img src="../assets/images/line_end_arrow_notch-sm.png" alt=""></a>
           </div>
         </div>
         <!-- 查看更多 圈圈 -->
@@ -253,9 +261,8 @@
               </span>
               <form action="">
                 <input type="email" placeholder="EMAIL">
-                <!-- <input type="text" placeholder="COMMENTS"> -->
                 <textarea name="" id="" rows="4" placeholder="COMMENTS"></textarea>
-                <button class="btn btn-primary">送出</button>
+                <button class="btn btn-primary w-70">送出</button>
               </form>
           </div>
         </div>
@@ -266,45 +273,50 @@
     <ul class="ai-card-list text-white list-unstyled d-flex mb-0">
       <!-- 1 -->
       <li class="list-item w-25 border-end">
-        <a href="javascript:;" class="d-block px-7 py-8">
+        <a href="product-Diane.html" class="d-block px-7 py-8 h-100">
           <div class="text-Saira fs-400 text-center mb-4">1</div>
           <div class="text-Shrikhand fs-4 text-center mb-9">Diane</div>
           <div class="fw-bold">知識型</div>
-          <div class="d-flex justify-content-between align-items-center">
-            學術領導/知識分享/智能問答<img src="../assets/images/line_end_arrow_notch.png" alt="" class="ms-auto">
+          <div class="d-flex gap-5 justify-content-between align-items-center fw-light">
+            <p class="mb-0 flex-shrink-0">學術領導/知識分享/智能問答</p>
+            <!-- ?不知道要怎麼讓箭頭圖片自適應 -->
+            <img src="../assets/images/line_end_arrow_notch.png" alt="" class="w-25">
           </div>
         </a>
       </li>
       <!-- 2 -->
       <li class="list-item w-25 border-end">
-        <a href="javascript:;" class="d-block px-7 py-8">
+        <a href="jproduct-Felix.html" class="d-block px-7 py-8 h-100">
           <div class="text-Saira fs-400 text-center mb-4">2</div>
           <div class="text-Shrikhand fs-4 text-center mb-9">Felix</div>
           <div class="fw-bold">娛樂型</div>
-          <div class="d-flex justify-content-between align-items-center">
-            音樂播放/語音互動/遊戲陪伴<img src="../assets/images/line_end_arrow_notch.png" alt="" class="ms-auto">
+          <div class="d-flex gap-5  justify-content-between align-items-center fw-light">
+            <p class="mb-0 flex-shrink-0">音樂播放/語音互動/遊戲陪伴</p>
+            <img src="../assets/images/line_end_arrow_notch.png" alt="" class="w-25">
           </div>
         </a>
       </li>
       <!-- 3 -->
       <li class="list-item w-25 border-end">
-        <a href="javascript:;" class="d-block px-7 py-8">
+        <a href="product-Karina.html" class="d-block px-7 py-8 h-100">
           <div class="text-Saira fs-400 text-center mb-4">3</div>
           <div class="text-Shrikhand fs-4 text-center mb-9">Karina</div>
           <div class="fw-bold">生活型</div>
-          <div class="d-flex justify-content-between align-items-center">
-            健康提醒/日程安排/智能家居<img src="../assets/images/line_end_arrow_notch.png" alt="" class="ms-auto">
+          <div class="d-flex gap-5 justify-content-between align-items-center fw-light">
+            <p class="mb-0 flex-shrink-0">健康提醒/日程安排/智能家居</p>
+            <img src="../assets/images/line_end_arrow_notch.png" alt="" class="w-25">
           </div>
         </a>
       </li>
       <!-- 4 -->
       <li class="list-item w-25 border-end">
-        <a href="javascript:;" class="d-block px-7 py-8">
+        <a href="product-Vito.html" class="d-block px-7 py-8 h-100">
           <div class="text-Saira fs-400 text-center mb-4">4</div>
           <div class="text-Shrikhand fs-4 text-center mb-9">Vito</div>
           <div class="fw-bold">情感型</div>
-          <div class="d-flex justify-content-between align-items-center">
-            情感識別/心情分析/心靈支持<img src="../assets/images/line_end_arrow_notch.png" alt="" class="ms-auto">
+          <div class="d-flex gap-5 justify-content-between align-items-center fw-light">
+            <p class="mb-0 flex-shrink-0">情感識別/心情分析/心靈支持</p>
+            <img src="../assets/images/line_end_arrow_notch.png" alt="" class="w-25">
           </div>
         </a>
       </li>
