@@ -20,12 +20,8 @@
     height: 1px;
     background: #fff;
     position: absolute;
-    top: 79px;
+    top: 74px;
   }
-}
-.circle{
-  width: 196px;
-  aspect-ratio: 1/1;
 }
 .banner{
   img:hover{
@@ -40,6 +36,15 @@
   top: 70%;
   left: 50%;
   transform: translateX(-50%);
+}
+.share-list{
+  .card{
+    height: 416px;
+  }
+  .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 1,
+  }
 }
 .ai-card-list{
   a{
