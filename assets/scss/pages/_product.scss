@@ -4,6 +4,12 @@
 .circle-wrap{
     z-index: 20;
 }
+.carousel-control-prev,.carousel-control-next{
+    &:hover{
+        color: $secondary;
+        transition: all 0.4s;
+    }
+}
 .info-list{
     h4{
         position: relative;

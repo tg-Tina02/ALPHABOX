@@ -6,8 +6,6 @@
 
 
 body{
-  // background: #31095f;
-  // background: #000;
   padding-top: 73px;
 }
 img{
@@ -58,7 +56,23 @@ img{
 }
 .circle{
   width: 196px;
-  aspect-ratio: 1/1;
+  // aspect-ratio: 1/1;
+
+  /* 動畫包 */
+  animation-name: Rotate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite; /* 一直持續跑 */
+  animation-timing-function:linear;
+}
+.circle-sm{
+  width: 132px;
+  & + a{
+    color: white;
+    &:hover{
+      color: $primary;
+      transition: all 0.4s;
+    }
+  }
 
   /* 動畫包 */
   animation-name: Rotate;
