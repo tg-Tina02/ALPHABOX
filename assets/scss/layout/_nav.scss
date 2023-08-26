@@ -1,0 +1,16 @@
+.navbar-collapse{
+  background-image: linear-gradient(to bottom, #7000FF, #11002D);
+  border-top: 1px solid #fff;
+  @include Pad(){
+      border: none;
+      background-image:none;
+      background-color: $primary;
+  }
+}
+
+.product-nav{
+  .btn.active{
+    background: #fff;
+    color: #000;
+  }
+}

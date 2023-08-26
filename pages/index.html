@@ -12,82 +12,97 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
   </head>
-  <body class="position-relative">
+  <body class="position-relative bg-primary">
     <%- include('./layout/nav'); -%>
 
     <!-- 背景圖 -->
-    <div class="bg-images position-absolute"></div>
+    <!-- <div class=" position-absolute"></div> -->
 
-    <div class="container-fluid text-white pt-8 pb-3 border-top border-white">
+    <div class="container-fluid text-white pt-5 pt-lg-8 pb-3 border-top border-white bg-images">
       <div class="row mb-8">
-        <div class="col-3 d-flex flex-column justify-content-end">
+        <div class="col-md-3 align-self-end d-none d-md-block">
           <a href="news-p2.html" class="border-bottom border-white fw-bold">最新消息！新版本 v15.4 釋出，搶先體驗！</a>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6 order-1 order-md-0">
           <img src="../assets/images/circle.png" alt="圈圈logo" class="circle animation-Rotate mx-auto">
         </div>
-        <div class="col-3 d-flex flex-column justify-content-between">
-          <div class="border-top border-white fw-bold">ALPHABOX+ STUDIO</div>
-          <div style="color: #AD93CF;">Copyright © 2023 Hexschool.</div>
+        <div class="col-12 col-md-3 d-flex flex-column justify-content-between">
+          <div class="border-top border-white fw-bold mb-6">ALPHABOX+ STUDIO</div>
+          <div style="color: #AD93CF;" class="d-none d-md-block">Copyright © 2023 Hexschool.</div>
         </div>
       </div>
-      <div class="row banner mb-7">
+      <div class="row banner mb-6 mb-md-7 g-4">
+        <!-- 手機版才出現 -->
+        <div class="col-12 mb-6 d-md-none">
+          <div class="text-Shrikhand h4 d-flex justify-content-between">
+            <div>A</div><div>L</div><div>P</div><div>H</div><div>A</div><div>B</div><div>O</div><div>X</div><div>+</div>
+          </div>
+          <p class="fw-bold letter-spacing-30 text-center mb-0">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+        </div>
         <!-- 1-Diane -->
-        <div class="col-3">
+        <div class="col-md-3">
           <div class="pic w-100 h-100 position-relative hover-shadow" style="background-image: url('/assets/images/diane.png');">
             <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Diane</div>
           </div>
         </div>
-        <div class="col-6 text-center d-flex flex-column">
-          <div class="text-Shrikhand h4 d-flex justify-content-between">
-            <div>A</div><div>L</div><div>P</div><div>H</div><div>A</div><div>B</div><div>O</div><div>X</div><div>+</div>
-          </div>
-          <p class="fw-bold text-align-justify w-75 mx-auto">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
-          <div class="d-flex gap-5 mt-auto flex-grow-1">
+        <div class="col-md-6 text-center d-md-flex flex-column">
+          <div class="row g-4">
+            <!-- 電腦版才出現 -->
+            <div class="col-12 d-none d-md-block">
+              <div class="text-Shrikhand h4 d-flex justify-content-between">
+                <div>A</div><div>L</div><div>P</div><div>H</div><div>A</div><div>B</div><div>O</div><div>X</div><div>+</div>
+              </div>
+              <p class="fw-bold text-align-justify w-75 mx-auto d-none d-md-block">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            </div>
             <!-- 2-Felix -->
-            <div class="pic w-50 h-100 position-relative hover-shadow" style="background-image: url('/assets/images/felix.png');">
-              <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Felix</div>
+            <div class="col-md-6">
+              <div class="pic w-100 position-relative hover-shadow" style="background-image: url('/assets/images/felix.png');">
+                <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Felix</div>
+              </div>
             </div>
             <!-- 3-Karina -->
-            <div class="pic w-50 h-100 position-relative hover-shadow" style="background-image: url('/assets/images/karina.png');">
-              <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Karina</div>
+            <div class="col-md-6">
+              <div class="pic w-100 position-relative hover-shadow" style="background-image: url('/assets/images/karina.png');">
+                <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Karina</div>
+              </div>
             </div>
           </div>
         </div>
         <!-- 4-Vito -->
-        <div class="col-3 position-relative">
+        <div class="col-md-3 position-relative">
           <div class="pic w-100 h-100 position-relative hover-shadow" style="background-image: url('/assets/images/vito.png');">
             <div class="text-Shrikhand fs-4 text-center position-absolute w-100 top-0 pt-4">Vito</div>
           </div>
         </div>
       </div>
       <!-- 漸層線 上 -->
-      <div class="bg-linear-gradient-level w-100 mb-2" style="height: 40px;"></div>
+      <div class="bg-linear-gradient-level w-100 mb-4 mb-md-2" style="height: 40px;"></div>
 
-      <h3 class="h3 mb-3 letter-spacing-L">什麼是</h3>
-      <h3 class="h3 letter-spacing-L mb-4">ALPHABOX+</h3>
+      <h3 class="h5 mb-3 letter-spacing-L fs-lg-3">什麼是</h3>
+      <h3 class="h5 letter-spacing-L mb-4 fs-lg-3">ALPHABOX+</h3>
 
-      <hr class="mb-6" style="margin: 0 -12px;">
+      <hr class="mb-4 mb-md-6" style="margin: 0 -12px;">
 
       <div class="row align-items-center mb-6">
         <!-- 箭頭 -->
-        <div class="col-2">
+        <div class="col-2 d-none d-md-block">
           <a href="javascript:;">
             <img src="../assets/images/line_start_arrow_notch.png" alt="箭頭" class="me-auto">
           </a>
         </div>
-        <div class="col-8 position-relative">
+        <div class="col-md-8 position-relative">
           <!-- 大圖 -->
-          <img src="../assets/images/carousel.png" alt="手機圖片" class="img-fluid">
+          <img src="../assets/images/carousel.png" alt="手機圖片" class="img-fluid d-none d-md-block">
+          <img src="../assets/images/carousel_mobile.png" alt="手機圖片" class="img-fluid d-md-none">
           <!-- 圖中字 -->
-          <div class="position-absolute top-50 end-0 translate-middle-y text-end pe-7">
+          <div class="position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-end justify-content-md-center align-items-md-end p-4">
             <div class="h1 text-Shrikhand">01</div>
-            <div class="h4 mb-4 text-align-justify">立體投影技術</div>
+            <div class="h4 mb-4 text-align-justify w-11em">立體投影技術</div>
             <p class="h6">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
           </div>
         </div>
         <!-- 箭頭 -->
-        <div class="col-2">
+        <div class="col-2 d-none d-md-block">
           <a href="javascript:;">
             <img src="../assets/images/line_end_arrow_notch.png" alt="箭頭" class="ms-auto">
           </a>
@@ -100,12 +115,12 @@
 
     <!-- 最新消息 -->
     <div class="bg-radial-gradient-dark text-white fw-bold">
-      <div class="container pt-10">
-        <h3 class="h3 letter-spacing-L mb-7">最新消息</h3>
+      <div class="container pt-8 pt-lg-10 pb-9 pb-md-9">
+        <h3 class="h3 w-7em text-align-justify mx-auto ms-md-0 mb-6 mb-md-7">最新消息</h3>
         <!-- 區塊 -->
-        <div class="row border-top border-bottom border-white mb-9">
+        <div class="row border-top border-white mb-7 mb-lg-9">
           <!-- 上 -->
-          <div class="col-12 py-7 border-bottom border-white">
+          <div class="col-12 py-6 py-md-7 border-bottom border-white">
             <div class="letter-spacing-L mb-2">
               <span class="material-symbols-outlined me-4">
                 emergency
@@ -113,16 +128,16 @@
             </div>
             <div class="h5 letter-spacing-L mb-3">產品升級公告</div>
             <div class="row">
-              <div class="col-9">
+              <div class="col-md-9">
                 <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
               </div>
-              <div class="col-2 ms-auto">
+              <div class="col-md-2 ms-auto">
                 <a href="news.html"><img src="../assets/images/line_end_arrow_notch-2.png" alt="箭頭" class="img-fluid"></a>
               </div>
             </div>
           </div>
           <!-- 下左 -->
-          <div class="col-6 py-7 border-end border-white">
+          <div class="col-md-6 py-6 py-md-7 border-end border-bottom border-white">
             <div class="letter-spacing-L mb-2">
               <span class="material-symbols-outlined me-4">
                 emergency
@@ -133,7 +148,7 @@
             <a href="news.html"><img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭"></a>
           </div>
           <!-- 下右 -->
-          <div class="col-6 py-7">
+          <div class="col-md-6 py-6 py-md-7 border-bottom border-white">
             <div class="letter-spacing-L mb-2">
               <span class="material-symbols-outlined me-4">
                 emergency
@@ -145,108 +160,43 @@
           </div>
         </div>
         <!-- 查看更多 圈圈 -->
-        <div class="position-relative mb-8">
+        <div class="position-relative mb-md-8">
           <img src="../assets/images/Linked Path Group.png" alt="圈圈logo" class="mx-auto circle-sm  animation-Rotate">
           <a href="javascript:;" class=" position-absolute top-50 start-50 translate-middle">查看更多</a>
         </div>
-        <div class="text-end pt-7 pb-7">
+        <div class="text-end pt-7 d-none d-md-block">
           為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料
         </div>
       </div>
     </div>
 
     <!-- 使用分享 -->
-    <div class="bg-radial-gradient-light pt-10 pb-7 text-white fw-bold position-relative overflow-hidden">
+    <div class="bg-radial-gradient-light pt-8 pt-lg-10 pb-9 text-white fw-bold position-relative overflow-hidden">
       <!-- 背景字 -->
       <div class="position-absolute bg-text text-Shrikhand">ALPHABOX+</div>
 
       <div class="container">
-        <div class="d-flex align-items-center mb-4">
-          <h3 class="h3 letter-spacing-L">使用分享</h3>
-          <div class="flex-grow-1 text-center">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</div>
+        <div class="d-md-flex mb-5 mb-md-7">
+          <div class="mb-5 mb-md-0">
+            <h3 class="h3 letter-spacing-L mb-4">使用分享</h3>
+            <div class="d-flex">
+              <div class="me-1">01</div>
+              <div class="me-1"><span class="material-symbols-outlined">
+                horizontal_rule
+                </span></div>
+              <div>04</div>
+            </div>
+          </div>
+          <div class="bg-inf mx-auto pt-md-3">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</div>
         </div>
-        <div class="d-flex mb-7">
-          <div class="me-1">01</div>
-          <div class="me-1"><span class="material-symbols-outlined">
-            horizontal_rule
-            </span></div>
-          <div>04</div>
-        </div>
-        <span class="material-symbols-outlined fs-2 mb-5">
+        <span class="material-symbols-outlined fs-1 mb-5">
           emergency
           </span>
-        <!-- 輪播 -->
-        <!-- <ul class="row share-list list-unstyled mb-6">
-          <li class="col-4 list-item">
-            <div class="card bg-primary p-7">
-              <div class="d-flex align-items-center mb-6">
-                Zona<span class="material-symbols-outlined bold fs-8 mx-2">
-                  radio_button_unchecked
-                  </span>Taipei
-              </div>
-              <p>
-                ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
-              </p>
-              <div class="d-flex align-items-center mt-auto">
-                <span class="material-symbols-outlined bold fs-6 me-4">
-                  radio_button_unchecked
-                  </span><span class="material-symbols-outlined bold fs-6 me-4">
-                    radio_button_unchecked
-                    </span>ALPHABOX+ Dianne
-              </div>
-            </div>
-          </li>
-          <li class="col-4 list-item text-black">
-            <div class="card p-7">
-              <div class="d-flex align-items-center mb-6">
-                Lin <span class="material-symbols-outlined bold fs-8 mx-2">
-                  radio_button_unchecked
-                  </span>Chiayi
-              </div>
-              <p>
-                非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
-              </p>
-              <div class="d-flex align-items-center mt-auto">
-                <span class="material-symbols-outlined bold fs-6 me-4">
-                  radio_button_unchecked
-                  </span><span class="material-symbols-outlined bold fs-6 me-4">
-                    radio_button_unchecked
-                    </span>ALPHABOX+ Felix
-              </div>
-            </div>
-          </li>
-          <li class="col-4 list-item">
-            <div class="card bg-primary p-7">
-              <div class="d-flex align-items-center mb-6">
-                云<span class="material-symbols-outlined bold fs-8 mx-2">
-                  radio_button_unchecked
-                  </span>Taipei
-              </div>
-              <p>
-                我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
-              </p>
-              <div class="d-flex align-items-center mt-auto">
-                <span class="material-symbols-outlined bold fs-6 me-4">
-                  radio_button_unchecked
-                  </span><span class="material-symbols-outlined bold fs-6 me-4">
-                    radio_button_unchecked
-                    </span>ALPHABOX+ Dianne
-              </div>
-            </div>
-          </li>
-        </ul> -->
-        <!-- <div class="row mb-9">
-          <div class="col-8">
-            <hr>
-          </div>
-          <div class="col-auto">
-            SCROLL
-          </div>
-        </div> -->
 
+        <!-- 輪播 -->
         <!-- Swiper -->
         <!-- Slider main container -->
-        <div class="swiper mb-10">
+        <div class="swiper mb-10 d-none d-md-block">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper share-list">
             <!-- Slides -->
@@ -330,9 +280,64 @@
                 </div>
               </div>
             </div>
-            <!-- 5 -->
-            <div class="swiper-slide">
-              <div class="card bg-primary p-7">
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- Swiper結束 -->
+
+        <!-- 手機版 卡片輪播 版本1 -->
+        <div class="row share-list g-4 d-md-none">
+          <!-- 1 -->
+          <div class="col">
+            <div class="card bg-primary p-5">
+              <div class="d-flex align-items-center mb-6">
+                Zona<span class="material-symbols-outlined bold fs-8 mx-2">
+                  radio_button_unchecked
+                  </span>Taipei
+              </div>
+              <p>
+                ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <span class="material-symbols-outlined bold fs-6 me-4">
+                  radio_button_unchecked
+                  </span><span class="material-symbols-outlined bold fs-6 me-4">
+                    radio_button_unchecked
+                    </span>ALPHABOX+ Dianne
+              </div>
+            </div>
+          </div>
+            <!-- 2 -->
+            <div class="col">
+              <div class="card p-5 text-black">
+                <div class="d-flex align-items-center mb-6">
+                  Lin <span class="material-symbols-outlined bold fs-8 mx-2">
+                    radio_button_unchecked
+                    </span>Chiayi
+                </div>
+                <p>
+                  非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <span class="material-symbols-outlined bold fs-6 me-4">
+                    radio_button_unchecked
+                    </span><span class="material-symbols-outlined bold fs-6 me-4">
+                      radio_button_unchecked
+                      </span>ALPHABOX+ Felix
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="col">
+              <div class="card bg-primary p-5">
                 <div class="d-flex align-items-center mb-6">
                   云<span class="material-symbols-outlined bold fs-8 mx-2">
                     radio_button_unchecked
@@ -350,31 +355,118 @@
                 </div>
               </div>
             </div>
+            <!-- 4 -->
+            <div class="col">
+              <div class="card p-5 text-black">
+                <div class="d-flex align-items-center mb-6">
+                  Zichi<span class="material-symbols-outlined bold fs-8 mx-2">
+                    radio_button_unchecked
+                    </span>Kaohsiung
+                </div>
+                <p>
+                  讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <span class="material-symbols-outlined bold fs-6 me-4">
+                    radio_button_unchecked
+                    </span><span class="material-symbols-outlined bold fs-6 me-4">
+                      radio_button_unchecked
+                      </span>ALPHABOX+ Vito
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
-        <!-- Swiper結束 -->
 
-        <div>若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</div>
+        <div class="d-none d-md-block">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</div>
+
+      </div>
+
+      <!-- 手機版 卡片輪播 版本2 -->
+      <div class="share-list d-flex flex-column flex-md-row d-none">
+        <!-- 1 -->
+        <div class="box bg-primary p-7">
+          <div class="d-flex align-items-center mb-6">
+            Zona<span class="material-symbols-outlined bold fs-8 mx-2">
+              radio_button_unchecked
+              </span>Taipei
+          </div>
+          <p>
+            ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+          </p>
+          <div class="d-flex align-items-center mt-auto">
+            <span class="material-symbols-outlined bold fs-6 me-4">
+              radio_button_unchecked
+              </span><span class="material-symbols-outlined bold fs-6 me-4">
+                radio_button_unchecked
+                </span>ALPHABOX+ Dianne
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="box p-7 text-black">
+          <div class="d-flex align-items-center mb-6">
+            Lin <span class="material-symbols-outlined bold fs-8 mx-2">
+              radio_button_unchecked
+              </span>Chiayi
+          </div>
+          <p>
+            非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+          </p>
+          <div class="d-flex align-items-center mt-auto">
+            <span class="material-symbols-outlined bold fs-6 me-4">
+              radio_button_unchecked
+              </span><span class="material-symbols-outlined bold fs-6 me-4">
+                radio_button_unchecked
+                </span>ALPHABOX+ Felix
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="box bg-primary p-7">
+          <div class="d-flex align-items-center mb-6">
+            云<span class="material-symbols-outlined bold fs-8 mx-2">
+              radio_button_unchecked
+              </span>Taipei
+          </div>
+          <p>
+            我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
+          </p>
+          <div class="d-flex align-items-center mt-auto">
+            <span class="material-symbols-outlined bold fs-6 me-4">
+              radio_button_unchecked
+              </span><span class="material-symbols-outlined bold fs-6 me-4">
+                radio_button_unchecked
+                </span>ALPHABOX+ Dianne
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="box p-7 text-black">
+          <div class="d-flex align-items-center mb-6">
+            Zichi<span class="material-symbols-outlined bold fs-8 mx-2">
+              radio_button_unchecked
+              </span>Kaohsiung
+          </div>
+          <p>
+            讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+          </p>
+          <div class="d-flex align-items-center mt-auto">
+            <span class="material-symbols-outlined bold fs-6 me-4">
+              radio_button_unchecked
+              </span><span class="material-symbols-outlined bold fs-6 me-4">
+                radio_button_unchecked
+                </span>ALPHABOX+ Vito
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- 聯絡我們 -->
     <div class="bg-dark-2 text-white fw-bold py-8">
-      <div class="container py-9">
+      <div class="container py-0 py-md-9">
         <div class="row">
-          <div class="col-5">
+          <div class="col-md-5">
             <h3 class="h3 letter-spacing-L mb-4">聯絡我們</h3>
             <!-- 裝飾線 -->
-            <div class="d-flex mb-8">
+            <div class="d-flex mb-6 mb-md-8">
               <div style="width: 12px;aspect-ratio: 1/1;" class="bg-white rounded-circle me-2"></div>
               <div style="width: 124px;" class="bg-white rounded-pill me-2"></div>
             </div>
@@ -383,8 +475,8 @@
               立即體驗神奇功能並享限時優惠！
             </p>
           </div>
-          <div class="col-7">
-            <span class="material-symbols-outlined fs-2 mb-4">
+          <div class="col-md-7">
+            <span class="material-symbols-outlined fs-1 mb-4">
               emergency
               </span>
               <form action="" class="d-flex flex-column align-items-end fs-5">
@@ -400,54 +492,52 @@
     </div>
 
     <!-- ai card-list -->
-    <ul class="ai-card-list text-white list-unstyled d-flex mb-0">
+    <ul class="ai-card-list text-white list-unstyled d-flex flex-wrap mb-0">
       <!-- 1 -->
-      <li class="list-item w-25 border-end border-white">
-        <a href="product-Felix.html" class="d-block px-7 py-8">
+      <li class="list-item w-50 w-md-25 border-end border-white">
+        <a href="product-Felix.html" class="d-block p-3">
           <div class="text-Saira fs-400 text-center mb-4">1</div>
-          <div class="text-Shrikhand fs-4 text-center mb-9">Diane</div>
+          <div class="text-Shrikhand fs-4 text-center mb-4 mb-md-9">Diane</div>
           <div class="fw-bold">知識型</div>
-          <div class="d-flex gap-5 justify-content-between align-items-center fw-light">
-            <p class="mb-0 flex-shrink-0">學術領導/知識分享/智能問答</p>
-            <!-- ?不知道要怎麼讓箭頭圖片自適應 -->
-            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
+            <p class="fw-light mb-0">學術領導/知識分享/智能問答</p>
+            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭" class="w-md-25">
           </div>
         </a>
       </li>
       <!-- 2 -->
-      <li class="list-item w-25 border-end border-white">
-        <a href="product-Felix.html" class="d-block px-7 py-8">
+      <li class="list-item w-50 w-md-25 border-end border-white">
+        <a href="product-Felix.html" class="d-block p-3">
           <div class="text-Saira fs-400 text-center mb-4">2</div>
-          <div class="text-Shrikhand fs-4 text-center mb-9">Felix</div>
+          <div class="text-Shrikhand fs-4 text-center mb-4 mb-md-9">Felix</div>
           <div class="fw-bold">娛樂型</div>
-          <div class="d-flex gap-5 justify-content-between align-items-center fw-light">
-            <p class="mb-0 flex-shrink-0">音樂播放/語音互動/遊戲陪伴</p>
-            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
+            <p class="fw-light mb-0">音樂播放/語音互動/遊戲陪伴</p>
+            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭" class="w-md-25">
           </div>
         </a>
       </li>
-      <!-- 3 -->
-      <li class="list-item w-25 border-end border-white">
-        <a href="product-Karina.html" class="d-block px-7 py-8">
+      <!-- 3 --><!-- ?這個a標籤範圍無法撐滿父容器 -->
+      <li class="list-item w-50 w-md-25 border-end border-white">
+        <a href="product-Felix.html" class="d-block p-3 h-100 d-flex flex-column">
           <div class="text-Saira fs-400 text-center mb-4">3</div>
-          <div class="text-Shrikhand fs-4 text-center mb-9">Karina</div>
-          <div class="fw-bold">生活型</div>
-          <div class="d-flex gap-5 justify-content-between align-items-center fw-light">
-            <p class="mb-0 flex-shrink-0">健康提醒/日程安排/智能家居</p>
-            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭">
+          <div class="text-Shrikhand fs-4 text-center mb-4 mb-md-9">Karina</div>
+          <div class="fw-bold mt-auto">生活型</div>
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
+            <p class="fw-light mb-0">健康提醒/日程安排/智能家居</p>
+            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭" class="w-md-25">
           </div>
         </a>
       </li>
       <!-- 4 -->
-      <!-- ? overflow-hidden 不然 箭頭 會超出去 -->
-      <li class="list-item w-25 border-end border-white">
-        <a href="product-Vito.html" class="d-block px-7 py-8 overflow-hidden">
+      <li class="list-item w-50 w-md-25 border-end border-white">
+        <a href="product-Vito.html" class="d-block p-3">
           <div class="text-Saira fs-400 text-center mb-4">4</div>
-          <div class="text-Shrikhand fs-4 text-center mb-9">Vito</div>
+          <div class="text-Shrikhand fs-4 text-center mb-9 mb-md-9">Vito</div>
           <div class="fw-bold">情感型</div>
-          <div class="d-flex gap-5 justify-content-between align-items-center fw-light">
-            <p class="mb-0 flex-shrink-0">情感識別/心情分析/心靈支持</p>
-            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
+            <p class="fw-light mb-0">情感識別/心情分析/心靈支持</p>
+            <img src="../assets/images/line_end_arrow_notch-sm.png" alt="箭頭" class="w-md-25">
           </div>
         </a>
       </li>

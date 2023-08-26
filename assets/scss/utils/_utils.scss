@@ -1,3 +1,4 @@
+
 // google icon
 .material-symbols-outlined {
   vertical-align: middle;
@@ -25,6 +26,9 @@
 .letter-spacing-L{
   letter-spacing: 1em;
 }
+.letter-spacing-30{
+  letter-spacing: 0.3rem;
+}
 // 文字對齊
 .text-align-justify{
   text-align-last: justify;
@@ -42,6 +46,9 @@
 }
 .w-7em{
   width: 7em;
+}
+.w-11em{
+  width: 11em;
 }
 
 // 圈圈跟動畫
@@ -77,4 +84,13 @@
 
 .mygap-40{
   gap: 40px;
+}
+
+@include Pad(){
+  .fs-lg-3{
+      font-size: 48px;
+  }
+}
+.fs-400{
+  font-size: 128px;
 }

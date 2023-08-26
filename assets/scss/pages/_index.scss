@@ -1,8 +1,8 @@
 .bg-images{
-  height: 2049px;
-  width: 100%;
-  top: 0;
-  z-index: -1;
+  // height: 2049px;
+  // width: 100%;
+  // top: 0;
+  // z-index: -1;
   background-image: url('/assets/images/home_background.png'),linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, #000 65%),url('/assets/images/carousel_background.png') ;
   background-size: 100% 960px, 100% 100%, 980px 1089px;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -11,18 +11,22 @@
     bottom right,
     bottom left;
 }
-.banner{
-  // height: 676px;
-}
 .pic{
-  min-height: 676px;
+  min-height: auto;
+  aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  @include Pad(){
+    min-height: 676px;
+  }
 }
 
 .bg-text{
-  font-size: 400px;
+  @include Pad(){
+    font-size: 400px;
+  }
+  font-size: 128px;
   opacity: 0.04;
   text-align: center;
   top: 70%;
@@ -31,7 +35,17 @@
 }
 .share-list{
   .card{
+    @include Pad(){
+      height: 416px;
+    }
+    height: 351px;
+  }
+  // overflow-x: scroll;
+  .box{
     height: 416px;
+    max-width: 416px;
+    flex-shrink: 0;
+    background: white;
   }
 }
 .ai-card-list{

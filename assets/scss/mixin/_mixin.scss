@@ -1,0 +1,15 @@
+
+// <!-- 平板版以上 -->
+@mixin Pad{
+    @media (min-width:768px){
+        @content
+    }
+};
+
+// <!-- lg 版 -->
+@mixin Lg{
+    @media (min-width:993px){
+        @content
+    }
+};
+

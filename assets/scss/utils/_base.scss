@@ -9,7 +9,10 @@
 }
 
 body{
-  padding-top: 74px;
+  @include Pad(){
+    padding-top: 74px;
+  }
+  padding-top: 72px;
 }
 img{
   display: block;

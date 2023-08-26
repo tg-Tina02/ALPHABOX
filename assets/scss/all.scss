@@ -4,11 +4,14 @@
 
 @import "../../node_modules/bootstrap";
 
+
+@import './mixin/mixin';
 //utils
 @import './utils/base';
 @import './utils/utils';
 @import './utils/background';
 @import './utils/hover';
+
 
 //components
 @import './components/pagination';
@@ -17,13 +20,7 @@
 @import './components/modal';
 
 //layout
-@import './layout/product-nav';
+@import './layout/nav';
 
 //pages
 @import './pages/index';
-// @import './pages/product';
-// @import './pages/about';
-// @import './pages/news';
-// @import './pages/FAQ';
-// @import './pages/contact';
-// @import './pages/Sign';
