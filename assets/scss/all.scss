@@ -4,16 +4,26 @@
 
 @import "../../node_modules/bootstrap";
 
+//utils
 @import './utils/base';
+@import './utils/utils';
+@import './utils/background';
+@import './utils/hover';
 
-@import './layout/nav.scss';
-@import './layout/footer.scss';
+//components
+@import './components/pagination';
+@import './components/accordion';
+@import './components/form';
+@import './components/modal';
+
+//layout
+@import './layout/product-nav';
 
 //pages
-@import './pages/index.scss';
-@import './pages/product.scss';
-@import './pages/about.scss';
-@import './pages/news.scss';
-@import './pages/FAQ.scss';
-@import './pages/contact.scss';
-@import './pages/Sign.scss';
+@import './pages/index';
+// @import './pages/product';
+// @import './pages/about';
+// @import './pages/news';
+// @import './pages/FAQ';
+// @import './pages/contact';
+// @import './pages/Sign';

@@ -1,0 +1,80 @@
+// google icon
+.material-symbols-outlined {
+  vertical-align: middle;
+// font-variation-settings:
+// 'FILL' 0,
+// 'wght' 400,
+// 'GRAD' 0,
+// 'opsz' 48
+}
+.material-symbols-outlined.bold{
+  font-variation-settings:
+  'FILL' 1,
+}
+
+//字體
+//英文
+.text-Shrikhand{
+    font-family: 'Shrikhand', cursive;
+}
+//大數字
+.text-Saira{
+  font-family: 'Saira Condensed', sans-serif;
+}
+// 文字間距
+.letter-spacing-L{
+  letter-spacing: 1em;
+}
+// 文字對齊
+.text-align-justify{
+  text-align-last: justify;
+}
+
+
+// border
+.border-top-2-dotted{
+  border-top: 2px dotted;
+}
+
+// 寬度 width
+.w-fit-content{
+  width: fit-content;
+}
+.w-7em{
+  width: 7em;
+}
+
+// 圈圈跟動畫
+.circle{
+  width: 196px;
+}
+.circle-sm{
+  width: 132px;
+}
+/* 動畫包 */
+@keyframes Rotate{
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+.animation-Rotate{
+  animation-name: Rotate;/* 宣告動畫 */
+  animation-duration: 7s;
+  animation-iteration-count: infinite; /* 一直持續跑 */
+  animation-timing-function:linear;
+}
+
+
+.z-index-20{
+  z-index: 20;
+}
+.z-index-100{
+  z-index: 100;
+}
+
+.mygap-40{
+  gap: 40px;
+}

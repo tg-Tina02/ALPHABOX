@@ -400,8 +400,10 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  15: 15%, //custom
   50: 50%,
   70: 70%, //custom
+  75: 75%, //custom
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -418,7 +420,7 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $white;//$primary !default; custom
 $link-decoration:                         none;//underline !default; custom
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -596,7 +598,8 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   7: 14px, //custom
-  8: 8px //custom
+  8: 8px, //custom
+  400:400px //custom
 ) !default;
 // scss-docs-end font-sizes
 

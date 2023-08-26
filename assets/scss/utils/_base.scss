@@ -4,102 +4,23 @@
 // icon
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+*{
+  // outline: 1px solid red;
+}
 
 body{
-  padding-top: 73px;
+  padding-top: 74px;
 }
 img{
   display: block;
   max-height: 100%;
 }
-//英文
-.text-Shrikhand{
-    font-family: 'Shrikhand', cursive;
-}
-//大數字
-.text-Saira{
-  font-family: 'Saira Condensed', sans-serif;
-}
-
-.material-symbols-outlined {
-    vertical-align: middle;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-.line-bg-gradient{
-  height: 40px;
-  width: 100%;
-  background-image: linear-gradient(to right, #7000FF, #11002D);
-}
-.letter-spacing-L{
-  letter-spacing: 1em;
-}
-.text-align-justify{
-  text-align-last: justify;
-}
-.bg-gradient-light{
-  background:radial-gradient(circle at center,#000,#28085C);
-}
-.bg-gradient-dark{
-  background:radial-gradient(circle at center,#28085C,#000);
-}
-@keyframes Rotate{
-  from{
-      transform: rotate(0deg);
-  }
-  to{
-      transform: rotate(360deg);
-  }
-}
-.circle{
-  width: 196px;
-  // aspect-ratio: 1/1;
-
-  /* 動畫包 */
-  animation-name: Rotate;
-  animation-duration: 7s;
-  animation-iteration-count: infinite; /* 一直持續跑 */
-  animation-timing-function:linear;
-}
-.circle-sm{
-  width: 132px;
-  & + a{
-    color: white;
-    &:hover{
-      color: $primary;
-      transition: all 0.4s;
-    }
-  }
-
-  /* 動畫包 */
-  animation-name: Rotate;
-  animation-duration: 7s;
-  animation-iteration-count: infinite; /* 一直持續跑 */
-  animation-timing-function:linear;
-}
 
 form{
-  input:not([type="checkbox"]),textarea{
-    display: block;
-    width: 100%;
-    margin-bottom: 16px;
-    font-size: 20px;
-    padding: 8px 16px;
-    border-radius: 0;
-    resize: none;
-  }
   ::placeholder{
     color: #1F0F39;
   }
-  .w-70{
-    width: 70%;
-    position: relative;
-    left: 30%;
+  textarea{
+    resize: none;
   }
-}
-.fs-400{
-  font-size: 400px;
 }
