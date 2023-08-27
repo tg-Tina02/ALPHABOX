@@ -39,6 +39,14 @@
 .border-top-2-dotted{
   border-top: 2px dotted;
 }
+.border-bottom-2-dotted{
+  border-bottom: 2px dotted;
+}
+.border-md-end{
+  @include Pad(){
+    border-right: 1px solid white;
+  }
+}
 
 // 寬度 width
 .w-fit-content{
@@ -53,11 +61,17 @@
 
 // 圈圈跟動畫
 .circle{
-  width: 196px;
+  max-width: 196px;
 }
 .circle-sm{
-  width: 132px;
+  max-width: 132px;
 }
+// .circle-sm109-md196{
+//   width: 196px;
+//   @include Pad(){
+//     width: 109px;
+//   }
+// }
 /* 動畫包 */
 @keyframes Rotate{
   from{
@@ -86,11 +100,32 @@
   gap: 40px;
 }
 
+.fs-400{
+  font-size: 128px;
+}
+.h1{
+  // font-size: 24px;
+}
+.fs-sm96-md128{
+  font-size: 96px;
+}
+.fs-sm24-md96{
+  font-size: 24px;
+}
+.fs-sm16-md24{
+  font-size: 16px;
+}
 @include Pad(){
+  .fs-sm96-md128{
+    font-size: 128px;
+  }
+  .fs-sm24-md96{
+    font-size: 96px;
+  }
+  .fs-sm16-md24{
+    font-size: 24px;
+  }
   .fs-lg-3{
       font-size: 48px;
   }
-}
-.fs-400{
-  font-size: 128px;
 }

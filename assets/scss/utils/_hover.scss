@@ -24,10 +24,13 @@
         position: absolute;
         top: 100%;
         left: 0;
-        width: 0px;
+        width: 100%;
         height: 2px;
         background: #000;
         position: absolute;
+        @include Pad(){
+            width: 0px;
+        }
     }
     &:hover{
         .Title::after{

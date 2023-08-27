@@ -23,15 +23,13 @@
 }
 
 .bg-text{
-  @include Pad(){
-    font-size: 400px;
-  }
-  font-size: 128px;
+  // font-size: 128px;
+  line-height: 0.1;
+  // @include Pad(){
+  //   font-size: 400px;
+  // }
   opacity: 0.04;
-  text-align: center;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%);
+  // text-align: center;
 }
 .share-list{
   .card{
@@ -50,10 +48,15 @@
 }
 .ai-card-list{
   a{
-    background-color: black;
-    transition: all 0.4s;
-    &:hover{
-      background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  @include Pad(){
+    a{
+      background-color: black;
+      transition: all 0.4s;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+      }
     }
   }
   .list-item{
