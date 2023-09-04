@@ -214,9 +214,7 @@
           emergency
           </span>
 
-        <!-- 輪播 -->
         <!-- Swiper -->
-        <!-- Slider main container -->
         <div class="swiper mb-10 d-none d-md-block">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper share-list">
@@ -302,19 +300,20 @@
               </div>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <!-- Scrollbar -->
+          <div class="row align-items-center mt-5">
+            <div class="col-8">
+              <!-- 加上 position-static 將滾動條的絕對定位設定覆蓋 -->
+              <div class="swiper-scrollbar position-static"></div>
+            </div>
+            <div class="col-1">
+              <p class="mb-0 text-white">SCROLL</p>
+            </div>
+          </div>
         </div>
         <!-- Swiper結束 -->
 
-        <!-- 手機版 卡片輪播 版本1 -->
+        <!-- 手機版 卡片輪播 -->
         <div class="row share-list g-4 d-md-none">
           <!-- 1 -->
           <div class="col">
@@ -401,82 +400,6 @@
         <div class="row d-none d-md-block">
           <div class="col">
             若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。
-          </div>
-        </div>
-
-        <!-- 手機版 卡片輪播 版本2 -->
-        <div class="share-list d-flex flex-column flex-md-row d-none">
-          <!-- 1 -->
-          <div class="box bg-primary p-7">
-            <div class="d-flex align-items-center mb-6">
-              Zona<span class="material-symbols-outlined bold fs-8 mx-2">
-                radio_button_unchecked
-                </span>Taipei
-            </div>
-            <p>
-              ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
-            </p>
-            <div class="d-flex align-items-center mt-auto">
-              <span class="material-symbols-outlined bold fs-6 me-4">
-                radio_button_unchecked
-                </span><span class="material-symbols-outlined bold fs-6 me-4">
-                  radio_button_unchecked
-                  </span>ALPHABOX+ Dianne
-            </div>
-          </div>
-          <!-- 2 -->
-          <div class="box p-7 text-black">
-            <div class="d-flex align-items-center mb-6">
-              Lin <span class="material-symbols-outlined bold fs-8 mx-2">
-                radio_button_unchecked
-                </span>Chiayi
-            </div>
-            <p>
-              非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
-            </p>
-            <div class="d-flex align-items-center mt-auto">
-              <span class="material-symbols-outlined bold fs-6 me-4">
-                radio_button_unchecked
-                </span><span class="material-symbols-outlined bold fs-6 me-4">
-                  radio_button_unchecked
-                  </span>ALPHABOX+ Felix
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="box bg-primary p-7">
-            <div class="d-flex align-items-center mb-6">
-              云<span class="material-symbols-outlined bold fs-8 mx-2">
-                radio_button_unchecked
-                </span>Taipei
-            </div>
-            <p>
-              我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
-            </p>
-            <div class="d-flex align-items-center mt-auto">
-              <span class="material-symbols-outlined bold fs-6 me-4">
-                radio_button_unchecked
-                </span><span class="material-symbols-outlined bold fs-6 me-4">
-                  radio_button_unchecked
-                  </span>ALPHABOX+ Dianne
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="box p-7 text-black">
-            <div class="d-flex align-items-center mb-6">
-              Zichi<span class="material-symbols-outlined bold fs-8 mx-2">
-                radio_button_unchecked
-                </span>Kaohsiung
-            </div>
-            <p>
-              讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
-            </p>
-            <div class="d-flex align-items-center mt-auto">
-              <span class="material-symbols-outlined bold fs-6 me-4">
-                radio_button_unchecked
-                </span><span class="material-symbols-outlined bold fs-6 me-4">
-                  radio_button_unchecked
-                  </span>ALPHABOX+ Vito
-            </div>
           </div>
         </div>
       </div>
@@ -581,32 +504,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
-            spaceBetween: 24,
-            // 分頁、左右箭頭、滾動條若有使用則必需設定          
-            // 分頁   
-            // pagination: {
-            //     el: '.swiper-pagination',
-            //     clickable: true,
-            // },
-            pagination: {
-              // el: ".swiper-pagination",
-              // type: "progressbar",
-            },
-            // 左右箭頭    
-            navigation: {
-                // nextEl: '.swiper-button-next',
-                // prevEl: '.swiper-button-prev',
-            },
-            // 滾動條
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
-            scrollbar: {
-              el: ".swiper-scrollbar",
-              hide: true,
-            },
-        });
+        spaceBetween: 24, // slide 間距
+        slidesPerView: 3, // slide 出現幾個
+        // Scrollbar 滾動條
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true, //能不能用滑鼠拖動滾動條
+          dragSize: 554, //滾動條長度
+        },
+        // 使 swiper 可以使用滑鼠滾輪捲動
+        mousewheel: true,
+      });
     </script>
   </body>
 </html>

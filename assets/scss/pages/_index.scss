@@ -38,14 +38,21 @@
     }
     height: 351px;
   }
-  // overflow-x: scroll;
-  .box{
-    height: 416px;
-    max-width: 416px;
-    flex-shrink: 0;
-    background: white;
-  }
 }
+// Swiper
+.swiper {
+  overflow: initial;
+}
+/* 滾動條可拖曳區塊的顏色 */
+.swiper-scrollbar-drag {
+  background-color: #fff;
+}
+/* 整個滾動條的背景顏色 */
+.swiper-scrollbar {
+  // background-color: rgba(256,256,256,0.2);
+  background-color: #FFFFFF33;
+}
+
 .ai-card-list{
   a{
     background-color: rgba(0, 0, 0, 0.5);
