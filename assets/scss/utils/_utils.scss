@@ -103,9 +103,6 @@
 .fs-400{
   font-size: 128px;
 }
-.h1{
-  // font-size: 24px;
-}
 .fs-sm96-md128{
   font-size: 96px;
 }
@@ -114,6 +111,10 @@
 }
 .fs-sm16-md24{
   font-size: 16px;
+}
+
+.overflow-x-auto{
+  overflow-x: auto;
 }
 @include Pad(){
   .fs-sm96-md128{

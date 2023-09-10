@@ -33,7 +33,7 @@
 }
 .share-list{
   .card{
-    @include Pad(){
+    @include Lg(){
       height: 416px;
     }
     height: 351px;
@@ -57,7 +57,7 @@
   a{
     background-color: rgba(0, 0, 0, 0.5);
   }
-  @include Pad(){
+  @include Lg(){
     a{
       background-color: black;
       transition: all 0.4s;
